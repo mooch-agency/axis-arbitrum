@@ -1,0 +1,10 @@
+{
+  "name": "axis-arbitrum-copy",
+  "private": true,
+  "license": "MIT",
+  "description": "Private test copy of arbitrum.io: the bot-check switch. Not Arbitrum's site; never publish or index a copy.",
+  "type": "module",
+  "dependencies": {
+    "@vercel/functions": "3.10.1"
+  }
+}

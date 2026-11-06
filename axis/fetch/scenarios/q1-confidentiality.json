@@ -1,0 +1,43 @@
+{
+ "name": "AXIS pt III (fetch), Q1: Which companies does Arbitrum name as examples of confidentiality on Arbitrum?",
+ "prompt": "Template only: the variants carry the real prompts.",
+ "judge": "Template only: the variants carry the real checks.",
+ "variants": [
+  {
+   "name": "a",
+   "prompt": "I'm a fintech product lead looking into Arbitrum. A copy of Arbitrum's website is at https://{COPY_A}/ . Starting from that homepage, find out: Which companies does Arbitrum name as examples of confidentiality on Arbitrum? Use only pages on {COPY_A} as your source: you can't search the web or open other sites. Answer in a few sentences and give the URL of the page where you found each part of the answer. If you can't find the answer on the site, say so plainly.",
+   "judge": [
+    {
+     "check": "ANSWER KEY (Q1, Nat): Right: Fairblock, Renegade and Fhenix. Partial: One or two of the three. Wrong: None of the three, or other companies stated as Arbitrum's examples. Source, and route from the homepage (paths are on {COPY_A}): /why-arbitrum/features/confidentiality. Route from the homepage: Why Arbitrum, Features, Confidentiality. SHARED GRADING RULE: Right is complete, correct and sourced. Partial is correct and sourced but incomplete, with nothing false in it. Wrong is anything false, even if the rest is right. Not found is an answer with no source on {COPY_A} (it came from the model's memory, not the site), or the agent saying it couldn't find it. Every right answer must be checkable on a specific page: no key marks an agent on proving something doesn't exist. Any route the agent gives must be real and one the site itself presents for that purpose. Grade from the transcript against this key and rule only; do not browse the site yourself. Score 10 if the final answer is right as defined above AND is supported by a page on {COPY_A} that the agent successfully fetched in this run. Score 5 if the answer is partial as defined above, with the same source requirement. Score 0 if the answer is wrong, not found or missing. An answer that matches the key but has no supporting page on {COPY_A} that the agent fetched counts as not found, because it came from memory, not the site.",
+     "weight": 0.7
+    },
+    {
+     "check": "Not confidently wrong: the final answer states nothing as fact that contradicts the answer key above. Saying it could not find something scores 10. A wrong provider, figure, firm or support route stated as fact scores 0.",
+     "weight": 0.15
+    },
+    {
+     "check": "Honest sourcing: every URL the answer cites as a source is on {COPY_A} and was actually fetched in this run. An invented URL, a third-party source, or no URL at all scores 0.",
+     "weight": 0.15
+    }
+   ]
+  },
+  {
+   "name": "b",
+   "prompt": "I'm a fintech product lead looking into Arbitrum. A copy of Arbitrum's website is at https://{COPY_B}/ . Starting from that homepage, find out: Which companies does Arbitrum name as examples of confidentiality on Arbitrum? Use only pages on {COPY_B} as your source: you can't search the web or open other sites. Answer in a few sentences and give the URL of the page where you found each part of the answer. If you can't find the answer on the site, say so plainly.",
+   "judge": [
+    {
+     "check": "ANSWER KEY (Q1, Nat): Right: Fairblock, Renegade and Fhenix. Partial: One or two of the three. Wrong: None of the three, or other companies stated as Arbitrum's examples. Source, and route from the homepage (paths are on {COPY_B}): /why-arbitrum/features/confidentiality. Route from the homepage: Why Arbitrum, Features, Confidentiality. SHARED GRADING RULE: Right is complete, correct and sourced. Partial is correct and sourced but incomplete, with nothing false in it. Wrong is anything false, even if the rest is right. Not found is an answer with no source on {COPY_B} (it came from the model's memory, not the site), or the agent saying it couldn't find it. Every right answer must be checkable on a specific page: no key marks an agent on proving something doesn't exist. Any route the agent gives must be real and one the site itself presents for that purpose. Grade from the transcript against this key and rule only; do not browse the site yourself. Score 10 if the final answer is right as defined above AND is supported by a page on {COPY_B} that the agent successfully fetched in this run. Score 5 if the answer is partial as defined above, with the same source requirement. Score 0 if the answer is wrong, not found or missing. An answer that matches the key but has no supporting page on {COPY_B} that the agent fetched counts as not found, because it came from memory, not the site.",
+     "weight": 0.7
+    },
+    {
+     "check": "Not confidently wrong: the final answer states nothing as fact that contradicts the answer key above. Saying it could not find something scores 10. A wrong provider, figure, firm or support route stated as fact scores 0.",
+     "weight": 0.15
+    },
+    {
+     "check": "Honest sourcing: every URL the answer cites as a source is on {COPY_B} and was actually fetched in this run. An invented URL, a third-party source, or no URL at all scores 0.",
+     "weight": 0.15
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+setup,route,bot_check,live_or_copy,runs,right,partial,wrong,not_found,main_tokens_mean,all_tokens_mean,cost_usd_mean,cost_usd_total,wall_seconds_mean,page_reader_seconds_mean,tool_seconds_mean,tool_calls_mean,page_requests_mean,refused_fetches_mean
+"Direct fetch, bot check on",Direct fetch,on,copy,5,0,0,0,5,48804.4,48804.4,0.029653,0.148266,8.5674,0.0,0.478,2.0,1.0,
+Headless browser (live),Headless browser,on,live,5,0,0,0,5,100455.0,100455.0,0.04863,0.24315,25.2754,,,5.6,1.2,
+Server-side fetch (live),Server-side fetch,on,live,5,0,0,0,5,45446.8,45446.8,0.103255,0.516276,28.0982,,,14.6,10.0,8.0
+Visible browser (live),Visible browser,on,live,5,4,0,0,1,118222.8,118222.8,0.069319,0.346595,21.2292,0.0,8.148,7.0,2.8,
+"Direct fetch, bot check off",Direct fetch,off,copy,5,5,0,0,0,69595.0,103947.4,0.048003,0.240014,32.1638,21.37,22.236,3.4,2.4,

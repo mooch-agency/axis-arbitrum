@@ -1,0 +1,66 @@
+{
+  "name": "axis-arbitrum: visible browser route, Claude Code + Playwright MCP (headed Chrome) on live arbitrum.io",
+  "scenarios": "./scenarios",
+  "mcp_servers": {
+    "playwright": {
+      "type": "stdio",
+      "command": "{REPO}/node_modules/.bin/playwright-mcp",
+      "args": [
+        "--browser",
+        "chrome",
+        "--isolated",
+        "--blocked-origins",
+        "https://docs.arbitrum.io;https://blog.arbitrum.io;https://portal.arbitrum.io;https://status.arbitrum.io;https://support.arbitrum.io;https://openhouse.arbitrum.io;https://jobs.arbitrum.io;https://bridge.arbitrum.io",
+        "--output-dir",
+        "{REPO}/runs/_browser-output"
+      ]
+    }
+  },
+  "agents": [
+    {
+      "agent": "claude-code",
+      "model": "claude-sonnet-5-5",
+      "flags": {
+        "dangerously-skip-permissions": false,
+        "permission-mode": "dontAsk",
+        "settings": "{\"enabledPlugins\": {\"cc-plugin-agents-md@builtin\": false, \"cc-plugin-plugin-authoring@builtin\": false}, \"permissions\": {\"defaultMode\": \"dontAsk\", \"allow\": [\"mcp__playwright\"], \"deny\": [\"WebFetch\", \"WebSearch\", \"Bash\"]}}"
+      }
+    }
+  ],
+  "judging": {
+    "agents": [
+      {
+        "agent": "claude-code",
+        "model": "claude-fable-5",
+        "flags": {
+          "settings": "{\"enabledPlugins\": {\"cc-plugin-agents-md@builtin\": false, \"cc-plugin-plugin-authoring@builtin\": false}, \"permissions\": {\"deny\": [\"WebFetch\", \"WebSearch\", \"Bash\"]}}"
+        }
+      }
+    ]
+  },
+  "env": [
+    "CLAUDE_CODE_ENABLE_TELEMETRY",
+    "CLAUDE_CODE_ENHANCED_TELEMETRY_BETA",
+    "OTEL_TRACES_EXPORTER",
+    "OTEL_METRICS_EXPORTER",
+    "OTEL_LOGS_EXPORTER",
+    "OTEL_EXPORTER_OTLP_PROTOCOL",
+    "OTEL_EXPORTER_OTLP_TRACES_ENDPOINT",
+    "OTEL_EXPORTER_OTLP_HEADERS",
+    "OTEL_LOG_TOOL_DETAILS",
+    "OTEL_SERVICE_NAME",
+    "OTEL_LOG_TOOL_CONTENT",
+    "OTEL_LOG_RAW_API_BODIES",
+    "DISABLE_AUTOUPDATER",
+    "ANTHROPIC_CUSTOM_HEADERS"
+  ],
+  "settings": {
+    "runs": 1,
+    "concurrency": 1,
+    "limits": {
+      "scenario": {
+        "time_minutes": 15
+      }
+    }
+  }
+}

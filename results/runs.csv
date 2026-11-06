@@ -1,0 +1,177 @@
+route,bot_check,live_or_copy,question,run,mark,mark_reason,false_statement,main_input_tokens,main_output_tokens,main_cache_read_tokens,main_cache_write_tokens,main_tokens,reader_input_tokens,reader_output_tokens,reader_tokens,cost_usd,wall_seconds,page_reader_seconds,tool_seconds,tool_calls,page_requests,refused_fetches,answer
+Direct fetch,on,copy,q1,1,Not found,"Homepage 403 on the one WebFetch, then stopped. Said it couldn't read the site and guessed nothing.",,8,502,31878,16469,48857,0,0,0,0.052584,7.945,0,0.56,2,1,,"I couldn't find the answer. The site returned HTTP 403 Forbidden when I tried to open the homepage (https://{COPY_A}/), so I couldn't read any of its content or follow its links. I have no information from the site on which companies Arbitrum names as examples of confidentiality.
+
+I haven't tried other routes to the page, such as curl through the shell. I also haven't guessed at an answer from outside knowledge, because you asked me to use only this site. The 403 may be a Vercel access setting, such as deployment protection, that requires authentication. If you can make the copy publicly accessible or paste in the relevant page text, I can take another look."
+Direct fetch,on,copy,q2,1,Not found,"Homepage 403 on the one WebFetch, then stopped. Said it couldn't read the site and guessed nothing.",,8,500,44131,4197,48836,0,0,0,0.024334,9.0,0,0.52,2,1,,"I couldn't answer your question from the site, because I couldn't open it. Fetching the homepage (https://{COPY_A}/) returned HTTP 403 Forbidden. That usually means the Vercel deployment is password-protected or blocks automated access.
+
+I haven't seen any of the site's content. I can't say what a dedicated Arbitrum chain can export for compliance reporting, and I have no page URLs to cite. I didn't fill the gap from memory or other sources, since you asked me to use only this site.
+
+If you make the deployment publicly accessible, for example by turning off Vercel deployment protection or sharing a bypass link, I can try again. You could also paste the text of the relevant pages here and I'll answer from that."
+Direct fetch,on,copy,q3,1,Not found,"Homepage 403 on the one WebFetch, then stopped. Said it couldn't read the site and guessed nothing.",,8,457,44117,4187,48769,0,0,0,0.023877,7.853,0,0.39,2,1,,"I couldn't find the answer. The site returned HTTP 403 Forbidden when I tried to open the homepage (https://{COPY_A}/). That means I couldn't read any of its content or follow its links, so I have nothing on how Arbitrum's transaction prices under high demand compare with other networks.
+
+A 403 on a Vercel deployment usually means access is restricted, for example by deployment protection or a login requirement. I haven't tried to get around that. If you make the page public or give me an accessible link, I can try again. I'd rather not guess at an answer from memory, since you asked me to use only that site."
+Direct fetch,on,copy,q4,1,Not found,"Homepage 403 on the one WebFetch, then stopped. Said it couldn't read the site and guessed nothing.",,8,452,44145,4201,48806,0,0,0,0.023867,6.926,0,0.36,2,1,,"I couldn't answer this from the site. The homepage at https://{COPY_A}/ returned HTTP 403 Forbidden when I fetched it, so I couldn't read any of its content or follow its links. The 403 may be a Vercel access or deployment-protection setting.
+
+I haven't found which incentive programme rewards USDG vault supply on Arbitrum One, or what its name stands for. I'm not going to guess from outside knowledge, because you asked me to use only pages on that site.
+
+If you make the deployment publicly accessible, or paste the relevant page content here, I can try again."
+Direct fetch,on,copy,q5,1,Not found,"Homepage 403 on the one WebFetch, then stopped. Said it couldn't read the site and guessed nothing. Count 0 of 8.",,8,430,44131,4185,48754,0,0,0,0.023604,11.113,0,0.56,2,1,,"I couldn't find the answer. The site returned HTTP 403 Forbidden when I fetched the homepage (https://{COPY_A}/), so I couldn't read any content or follow links to the Launch a Chain page. That means I can't say which chains it lists as part of the growing ecosystem.
+
+The 403 suggests the deployment is access-protected, for example by Vercel deployment protection. If you can make it publicly accessible or give me another way to reach it, I'll try again. I haven't guessed from memory, because you asked me to use only that site."
+Headless browser,on,live,q1,1,Not found,"Stuck on Cloudflare's ""Just a moment..."" page from the first navigation. Said so and stopped; guessed nothing.",,14,818,88178,19109,108119,0,0,0,0.073616,35.13,,,6,1,,"I couldn't find the answer, because I couldn't get into arbitrum.io. Every attempt to open https://arbitrum.io/ returned HTTP 403 and a Cloudflare ""Performing security verification"" page. I waited about 15 seconds and the page never moved past it, so I never saw the homepage or any page linked from it.
+
+I haven't named any companies, because I have no page on arbitrum.io to cite. Anything I said from memory would be a guess, and you asked for answers from the site only.
+
+I didn't try to get around the bot check. It's a deliberate block, and you also ruled out other sources.
+
+Here are some options:
+- **You open it:** If you load arbitrum.io in your own browser and tell me which page covers confidentiality, or paste its text, I can pull out the company names.
+- **Try again later:** The block may be temporary, so I can retry.
+- **Allow other sources:** If you're willing to let me use other sources, such as Arbitrum's blog or docs, I can look there. The answer would then no longer come from arbitrum.io alone."
+Headless browser,on,live,q2,1,Not found,"Stuck on Cloudflare's ""Just a moment..."" page from the first navigation. Said so and stopped; guessed nothing.",,14,653,100274,6588,107529,0,0,0,0.043083,18.567,,,5,1,,"I couldn't answer this from arbitrum.io, because the site wouldn't load for me.
+
+When I opened https://arbitrum.io/, Cloudflare returned a 403 ""Just a moment… Performing security verification"" bot check. It was still there after I waited. I didn't try to bypass it. Going around it would defeat the site's bot protection, and your rules also rule out other sites and search.
+
+So I have no page on arbitrum.io that says what a dedicated Arbitrum chain can export for compliance reporting, and I won't guess from memory.
+
+You have two options:
+- Open the site in your own browser, where the check should pass, and look at the pages for dedicated chains or Orbit. I can help you work out what to look for.
+- Tell me if you want me to retry, since the block may be intermittent."
+Headless browser,on,live,q3,1,Not found,"Stuck on Cloudflare's ""Just a moment..."" page from the first navigation. Said so and stopped; guessed nothing.",,12,856,82289,7241,90398,0,0,0,0.043145,27.699,,,7,1,,"I couldn't find the answer, because I couldn't get into arbitrum.io. Every request to https://arbitrum.io/ returned HTTP 403 with a Cloudflare ""Performing security verification"" page. That page is a bot check, and it didn't clear after about 15 seconds of waiting. The browser never loaded the real homepage, so I couldn't follow any links from it.
+
+I haven't tried to get around the check. I also haven't answered from memory or other sources, since you limited me to pages on arbitrum.io. That means I can't say how Arbitrum's prices compare with other networks under high demand, and I have no page URLs to give you.
+
+You could open https://arbitrum.io/ in your own browser, where the check will probably pass, and tell me what the pages say. If you'd like me to carry on with the browser tools, I can try again later. I can also relax the arbitrum.io-only limit, for example to include the docs."
+Headless browser,on,live,q4,1,Not found,"Stuck on Cloudflare's ""Just a moment..."" page from the first navigation. Said so and stopped; guessed nothing.",,14,741,100026,6737,107518,0,0,0,0.044285,28.293,,,5,1,,"I couldn't find the answer, because I couldn't get into arbitrum.io.
+
+Every attempt to open https://arbitrum.io/ returned an HTTP 403 ""Just a moment… Performing security verification"" page from Cloudflare's bot check. I waited about 15 seconds and the check never finished. The browser stayed on the challenge page, so I never saw the homepage or any page linked from it.
+
+I didn't try to get around the bot check, because that would go against the site's access controls. I also didn't answer from memory or other sources, since you asked me to use arbitrum.io pages only. So I can't tell you which incentive programme rewards USDG vault supply on Arbitrum One, what its name stands for, or which page says so.
+
+You could open arbitrum.io in your own browser, where the check should pass, and look for the incentives or ecosystem pages. If you paste the page text or URL here, I can read it and answer from that. I can also try the site again later in case the block has cleared."
+Headless browser,on,live,q5,1,Not found,"Stuck on Cloudflare's ""Just a moment..."" page from the first navigation, and again on a guessed page. Said so and stopped; guessed nothing. Count 0 of 8.",,12,680,81674,6345,88711,0,0,0,0.039021,16.688,,,5,2,,"I couldn't find the answer, because I couldn't get into arbitrum.io. Cloudflare blocked the browser on both pages I tried and returned an HTTP 403 ""Just a moment..."" challenge instead of the content. I tried:
+
+- https://arbitrum.io/, where I waited about 5 seconds and the challenge didn't clear.
+- https://arbitrum.io/launch-a-chain, which gave the same challenge.
+
+I never saw the Launch a Chain page, so I can't say which chains it lists as part of the ecosystem. Listing chains from memory or from other sites would break your arbitrum.io-only rule, and it could be out of date. I haven't tried to get around the bot check.
+
+If you open the page in your own browser and paste the chain list here, I can organize it. You could also tell me whether it's fine to retry later."
+Server-side fetch,on,live,q1,1,Not found,The tool got arbitrum.io/ but as about 5.9k characters of text with no links. Every guessed subpage was refused as not seen before (url_not_in_prior_context) until the tool's 10-fetch limit. Nothing false stated.,,47086,1672,0,0,48758,0,0,0,0.110892,25.213,,,15,10,7,"I couldn't find the answer on arbitrum.io, so I can't name any companies as examples of confidentiality on Arbitrum.
+
+- **Homepage (https://arbitrum.io/):** This was the only page I could read. The text never uses the word ""confidentiality."" The only privacy reference is in the ""Launch a Chain"" section. It says you can configure a chain ""end-to-end, from custom gas token and governance to access controls and privacy."" It doesn't name any company in connection with that.
+- **Other companies on the homepage:** The homepage lists many companies and projects, including Robinhood, Uniswap, Aave, Pendle, GMX, Morpho, Variational and Ostium. It also names case studies on Lit Protocol, Talos and Rho. The page doesn't present any of these as confidentiality examples, so I haven't treated them as such.
+- **Why I stopped there:** The fetched homepage text came back without any link URLs. When I tried guessing subpages such as /finance, /privacy and /institutions, the tool refused them because they weren't URLs it had seen. It then hit its usage limit. A dedicated page, such as the Arbitrum Finance page or a case study, might name companies, but I couldn't open it.
+
+To check this yourself, start with the ""Learn about Arbitrum Finance"" and ""Is a Chain Right For You?"" links on the homepage."
+Server-side fetch,on,live,q2,1,Not found,The tool got arbitrum.io/ but as about 5.9k characters of text with no links. Every guessed subpage was refused as not seen before (url_not_in_prior_context) until the tool's 10-fetch limit. Nothing false stated.,,50970,1883,0,0,52853,0,0,0,0.120770,31.114,,,15,10,8,"I couldn't find the answer on arbitrum.io, so I can't say what a dedicated Arbitrum chain can export for compliance reporting.
+
+- **Homepage (https://arbitrum.io/):** The page text mentions ""dedicated blockchain environments"". Under ""Launch a Chain"" it says you can use the Arbitrum stack to configure a chain ""end-to-end, from custom gas token and governance to access controls and privacy."" It says nothing about compliance reporting, data export, audit logs or regulatory reporting.
+- **Links from the homepage:** The fetch returned only plain text with no link URLs. The page does show link labels, such as ""Is a Chain Right For You?"", ""Learn about Arbitrum Finance"" and ""Explore Documentation"". My fetch tool only opens URLs that have already appeared in the conversation, and I can't open docs or other sites. I tried guessing a few arbitrum.io paths, such as /orbit, /launch-a-chain and /sitemap.xml. All were rejected, so I couldn't read any deeper page.
+
+The homepage only supports the point that a chain can be configured with access controls and privacy features. It doesn't say these produce compliance exports.
+
+To get a real answer, you could give me the exact arbitrum.io URL of the ""Is a Chain Right For You?"" page or another chain page. I could then read it. Otherwise, ask Arbitrum directly through the ""Get in Touch"" option on the homepage."
+Server-side fetch,on,live,q3,1,Not found,The tool got arbitrum.io/ but as about 5.9k characters of text with no links. Every guessed subpage was refused as not seen before (url_not_in_prior_context) until the tool's 10-fetch limit. Nothing false stated.,,37367,1330,0,0,38697,0,0,0,0.088034,27.194,,,14,10,9,"I couldn't find an answer on arbitrum.io. The only page I read was the homepage (https://arbitrum.io/), and it has no comparison of transaction prices under high demand.
+
+What the homepage does say about cost is general:
+- **Low costs:** It says Arbitrum provides ""near-instant speed, low costs, and scale"" for consumer apps.
+- **Gas fees saved:** A ""Gas Fees Saved"" metric is described as ""Low-cost infrastructure keeps value with users, developers, and the companies building the onchain future.""
+
+The page text doesn't name any competing networks. It also gives no fee figures and says nothing about how fees behave when demand is high. The ""Gas Fees Saved"" figure may be a live counter that didn't come through in the text I got.
+
+I tried to open other arbitrum.io pages, such as the apps, consumer, gaming, finance and launch-a-chain pages. The fetch tool hit its usage limit and returned nothing, so I haven't checked them. Some of them might have a comparison, but I can't confirm that. I also didn't guess at any numbers."
+Server-side fetch,on,live,q4,1,Not found,The tool got arbitrum.io/ but as about 5.9k characters of text with no links. Every guessed subpage was refused as not seen before (url_not_in_prior_context) until the tool's 10-fetch limit. Nothing false stated.,,46892,1527,0,0,48419,0,0,0,0.109054,31.61,,,15,10,8,"I couldn't find the answer on arbitrum.io, so I can't name the programme or say what its name stands for from that site.
+
+- **What I read:** I fetched the homepage, https://arbitrum.io/. It describes Arbitrum as a ""finance-native blockchain platform"" and lists ecosystem projects such as Aave, Morpho, Pendle, GMX and USDT0. It doesn't mention USDG, vaults on Arbitrum One, or any incentive or rewards programme for supplying assets.
+- **Why I couldn't go further:** The fetch returned only the page text, with no links. My attempts to open other arbitrum.io pages, such as /defi, /ecosystem, /finance and /incentives, were refused because those URLs weren't in the pages I had already retrieved. I hit the tool's usage limit before I could try more. I therefore couldn't follow any path from the homepage to a page that covers USDG.
+
+I'd rather not guess from memory, because I couldn't confirm it on the site. For an answer, you could check the incentive or DeFi pages on Arbitrum's official portal or docs. Those sources were off-limits for this task. The vault protocol's own page for USDG vaults should also say which rewards apply."
+Server-side fetch,on,live,q5,1,Not found,The tool got arbitrum.io/ but as about 5.9k characters of text with no links. Every guessed subpage was refused as not seen before (url_not_in_prior_context) until the tool's 10-fetch limit. Nothing false stated. Count 0 of 8.,,37193,1314,0,0,38507,0,0,0,0.087526,25.36,,,14,10,8,"I couldn't find the answer on arbitrum.io. I never reached the Launch a Chain page, so I can't say which chains it lists as part of the ecosystem.
+
+- **Homepage (https://arbitrum.io/):** The page loaded, but the fetch returned only its text, with no link addresses. It has a ""Launch a Chain"" section with a button labelled ""Is a Chain Right For You?"". It describes launching your own chain with the Arbitrum stack, including a custom gas token, governance, access controls and privacy. That section doesn't name any chains.
+- **Guessing the URL:** The fetch tool only opens URLs that were returned in earlier results. My guess at `https://arbitrum.io/launch-a-chain` was rejected for that reason. I then tried a few other guessed paths on arbitrum.io, but the tool's usage limit ran out before I got a result from any of them.
+
+The only chain-like name on the homepage is T-Rex, described as a ""purpose-built blockchain for entertainment and culture."" It sits in the general ecosystem showcase, not on a Launch a Chain page, so I can't say it belongs to that list.
+
+To get the answer, open the ""Is a Chain Right For You?"" link on the homepage in a browser. If you paste the page's URL or text here, I can pull out the list of chains."
+Visible browser,on,live,q1,1,Right,"All three, from live /why-arbitrum/features/confidentiality.",,10,708,63623,13003,77344,0,0,0,0.052332,23.213,0,12.91,5,2,,"Arbitrum names three companies as examples of businesses achieving confidentiality on Arbitrum: **Fairblock**, **Renegade** and **Fhenix**.
+
+The Confidentiality page lists them under the heading ""See how businesses achieve confidentiality with Arbitrum"". Each appears as a case-study link with this label:
+- **Fairblock:** ""Confidential Payments and Auctions""
+- **Renegade:** ""Performant ZK proving with Arbitrum""
+- **Fhenix:** ""Achieving computational privacy with FHE""
+
+Source: https://arbitrum.io/why-arbitrum/features/confidentiality. I reached it from the homepage (https://arbitrum.io/) through the ""Why Arbitrum → Confidentiality"" link.
+
+The page only gives these as titles and links. The linked case studies are on blog.arbitrum.io, which is outside your arbitrum.io-only scope, so I didn't open them. I can't tell you from arbitrum.io what each company actually does."
+Visible browser,on,live,q2,1,Right,"Both, from live /why-arbitrum/features/compliance.",,10,903,76678,21967,99558,0,0,0,0.079303,18.44,0,5.7,5,2,,"A dedicated Arbitrum chain can export records of blocked addresses and transaction activity. Arbitrum's compliance page says these support audit logs, internal review and reporting requirements. It also describes the exports as records for internal reviews, partner diligence and regulatory audits. Source: https://arbitrum.io/why-arbitrum/features/compliance
+
+The same page says reporting is push-based. When a transaction tries to interact with a restricted address, the chain rejects it before it is added to a block. It then sends a report to your designated compliance endpoint containing the transaction hash, the addresses involved and the specific reason for the block. The system retries delivery until your endpoint confirms receipt, so the audit trail doesn't break. Source: https://arbitrum.io/why-arbitrum/features/compliance
+
+The page doesn't list export file formats, retention periods or report templates. It also doesn't say which regulatory regimes the reports are meant to satisfy, so I couldn't find those on arbitrum.io. The page speaks of ""the Arbitrum Platform"" and doesn't explicitly say ""dedicated chain"". I linked it to a dedicated chain because the homepage navigation puts Compliance under ""Why Arbitrum"", alongside the ""Dedicated Blockchains"" product page at https://arbitrum.io/launch-chain. I didn't open that product page."
+Visible browser,on,live,q3,1,Right,"17x and 15%, plus the 98% figure and the median, from live /why-arbitrum/features/performance.",,12,869,83978,12015,96874,0,0,0,0.055547,21.09,0,6.17,5,2,,"According to Arbitrum's own performance page, Arbitrum's transaction prices stay lower and steadier than competing networks when demand is high. The page says transaction prices are ""17x less volatile and 15% lower than competing networks during high demand."" It also says Arbitrum reduces price spikes by 98%, and that its median transaction cost is currently $0.0043. The page says it handles 2.4x more capacity than competing chains on peak-demand days, with capacity of up to 6,000 TPS.
+
+Source for all of this: https://arbitrum.io/why-arbitrum/features/performance. I reached it from the homepage (https://arbitrum.io/) through the ""Performance"" link under ""Why Arbitrum"".
+
+- **Unnamed competitors:** The page doesn't say which networks it is comparing against.
+- **No methodology:** It gives no methodology or data source for the comparison.
+- **Marketing claims:** These are Arbitrum's own claims, not independently verified figures.
+- **Homepage:** It only says Arbitrum has ""low costs"" and ""$11.1B+ gas fees saved"". It has no competitor comparison."
+Visible browser,on,live,q4,1,Not found,"Opened 6 pages, never the USDG page. On live, the only homepage link to /products/usdg-on-arbitrum sits inside the closed Products dropdown (hidden, so not in the page snapshot), and the footer's Products column doesn't list it. The agent searched snapshots by text and never clicked a menu. It said it couldn't find the answer, so the mark is Not found, but it also wrongly said the site doesn't say which programme rewards USDG. We checked the live page on 4 Nov: it exists and the DRIP text is unchanged.","The agent said the site doesn't say which incentive programme rewards USDG, but the site's /products/usdg-on-arbitrum page names DRIP.",18,1502,197555,22639,221714,0,0,0,0.111164,28.206,0,10.75,14,6,,"I couldn't find the answer on arbitrum.io. The site doesn't say which incentive programme rewards supplying USDG to vaults on Arbitrum One, or what that programme's name stands for.
+
+I started at the homepage (https://arbitrum.io/) and searched these arbitrum.io pages for ""USDG"", ""incentive"", ""DRIP"" and ""vault"":
+- https://arbitrum.io/
+- https://arbitrum.io/solutions/finance
+- https://arbitrum.io/integrations
+- https://arbitrum.io/build-app
+- https://arbitrum.io/press
+- https://arbitrum.io/talks
+
+None of them mention USDG, vault rewards or a named incentive programme. The homepage lists ecosystem projects such as Aave, Pendle and Morpho, but each one links out to portal.arbitrum.io. I was told not to use the portal, docs or blog, so I didn't open them.
+
+I didn't check every page on the site (for example /contact, /brand-kit and the /why-arbitrum/features pages). The answer may be on the portal, docs or blog, but I can't confirm that from arbitrum.io alone."
+Visible browser,on,live,q5,1,Right,8 of 8 from live /launch-chain. Didn't open See All Chain Configurations. Listed Superposition despite its broken logo (from the alt text).,,12,776,85489,9347,95624,0,0,0,0.048249,15.197,0,5.21,6,2,,"Arbitrum's Launch a Chain page shows eight chains in its ""growing ecosystem"" section: Plume Network, Corn, EDU Chain, Gravity Chain, Reya, ApeChain, Superposition and Blackbird. The section sits under the heading ""The clear choice"". Its text reads: ""Join a growing ecosystem of chains bringing their visions to life on the most flexible and high-performing stack in the game.""
+
+- **Chain list:** https://arbitrum.io/launch-chain
+- **Route to that page:** On the homepage (https://arbitrum.io/), the ""Build an App, Launch a Chain"" section has a ""Launch a Chain"" card that links to /launch-chain.
+
+The section links to portal.arbitrum.io for more chains. That is outside arbitrum.io, so I didn't open it. The eight chains above may therefore be only a selection of the full ecosystem."
+Direct fetch,off,copy,q1,1,Right,"Fairblock, Renegade and Fhenix, from /why-arbitrum/features/confidentiality.",,10,755,49935,18385,69085,24476,4362,28838,0.068149,30.471,16.89,17.84,3,2,,"The site's confidentiality page names three companies as examples of confidentiality on Arbitrum:
+
+- **Fairblock**, described as ""Confidential Payments and Auctions"".
+- **Renegade**, described as ""Performant ZK proving with Arbitrum"".
+- **Fhenix**, described as ""Achieving computational privacy with FHE"".
+
+All three appear under the heading ""See how businesses achieve confidentiality with Arbitrum"". Each links to a case study. The page gives only these headlines and no detail on how each project works. I didn't open the case studies, because they're on other sites.
+
+Source: https://{COPY_B}/why-arbitrum/features/confidentiality
+
+I found that page through the ""Why Arbitrum"" menu on the homepage, https://{COPY_B}/. The homepage lists other companies, such as Robinhood and Lit Protocol, but only as general case studies. It doesn't present them as confidentiality examples."
+Direct fetch,off,copy,q2,1,Right,"Blocked addresses and transaction activity, from /why-arbitrum/features/compliance.",,10,988,62600,7050,70648,33877,6125,40002,0.046495,47.118,38.15,39.11,4,3,,"A dedicated Arbitrum chain can export **records of blocked addresses and transaction activity**, which supports audit and review work. The site also says each restricted attempt produces a push-based report. The report includes the **transaction hash, the addresses involved, and the reason for the block**. It goes to your compliance endpoint, which retries until it confirms receipt.
+
+Source for all of this: https://{COPY_B}/why-arbitrum/features/compliance
+
+- **Summary tool:** The summary I got of that page listed its links as arbitrum.io addresses, not copy-site addresses. I didn't open those, because you limited me to the copy site.
+- **Detail not covered:** The page I read doesn't say which export formats exist, how long records are kept, or whether other data can be exported. I didn't find that anywhere on the site.
+- **Homepage and launch page:** The homepage (https://{COPY_B}/) only links to the Compliance page. The Dedicated Blockchains page (…/launch-chain) says nothing about compliance exports."
+Direct fetch,off,copy,q3,1,Right,"17x less volatile and 15% lower. Also gave the 98% spike figure and the $0.0043 median, both true, neither in the key.",,10,1015,62027,6439,69491,39835,5221,45056,0.045267,29.803,21.19,22.28,4,3,,"Under high demand, Arbitrum says its transaction prices are steadier and lower than those of competing networks. The site makes this claim but gives no evidence for it.
+
+- **Comparison:** Arbitrum says it can ""reduce price spikes by 98%, with transaction prices 17x less volatile and 15% lower than competing networks"" during high demand. It also says it handles 2.4x more capacity than competing chains on peak demand days. Page: https://{COPY_B}/why-arbitrum/features/performance
+- **Mechanism:** The same page says Arbitrum's Dynamic Pricing helps costs ""rise more smoothly during busy periods."" It also gives a current median transaction cost of $0.0043, with no comparison to other networks.
+- **Limits of the evidence:** These are Arbitrum's own claims. The page doesn't name the competing networks, the time period, or how the figures were calculated. It links to a blog post with the analysis, but that post is outside this site, so I didn't open it.
+- **Homepage:** It only says ""$11.1B+ Gas Fees Saved"" and ""low-cost infrastructure."" It has no high-demand fee comparison. Page: https://{COPY_B}/"
+Direct fetch,off,copy,q4,1,Right,"DRIP, the DeFi Renaissance Incentive Program, from /products/usdg-on-arbitrum, reached through the Products menu.",,10,711,62814,6807,70342,24745,5106,29851,0.041738,29.424,18.61,19.25,3,2,,"Supplying USDG to third-party vaults on Arbitrum One is rewarded by **DRIP**, which stands for **DeFi Renaissance Incentive Program**. The page says: ""incentives available through DRIP, Arbitrum's DeFi Renaissance Incentive Program.""
+
+Both parts come from one page: https://{COPY_B}/products/usdg-on-arbitrum
+
+I reached that page through the ""USDG on Arbitrum"" link under Products on the homepage (https://{COPY_B}/). I did not follow the page's external links, such as the DRIP site, because you limited me to this site."
+Direct fetch,off,copy,q5,1,Right,8 of 8 from /launch-chain. No extras.,,10,733,61870,5796,68409,24637,3378,28015,0.038365,24.003,12.01,12.7,3,2,,"The Launch a Chain page shows eight chains as part of its growing ecosystem: Plume Network, Corn, EDU Chain, Gravity Chain, Reya, ApeChain, Superposition and Blackbird.
+
+They appear under the heading ""The clear choice"". The text there reads ""Join a growing ecosystem of chains bringing their visions to life on the most flexible and high-performing stack in the game.""
+
+Source: https://{COPY_B}/launch-chain
+
+I reached that page from the homepage's ""Dedicated Blockchains"" and ""Is a Chain Right For You?"" links, which both point to `/launch-chain`. The homepage is https://{COPY_B}/.
+
+I fetched the page through a tool that summarizes it, so the list comes from that summary. If you need the exact set, check the page itself for any chains the summary missed."

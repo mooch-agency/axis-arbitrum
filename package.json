@@ -1,0 +1,13 @@
+{
+  "name": "axis-arbitrum",
+  "private": true,
+  "license": "MIT",
+  "description": "Method, data and scripts for mooch.agency's test of whether an AI agent can read arbitrum.io behind Cloudflare's bot check.",
+  "type": "module",
+  "dependencies": {
+    "@netlify/axis": "1.21.0"
+  },
+  "devDependencies": {
+    "@playwright/mcp": "0.0.83"
+  }
+}

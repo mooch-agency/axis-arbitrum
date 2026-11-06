@@ -1,0 +1,25 @@
+{
+ "name": "AXIS pt III (browser), Q5: Which chains does Arbitrum show on its Launch a Chain page as part of its growing ecosystem?",
+ "prompt": "Template only: the variants carry the real prompts.",
+ "judge": "Template only: the variants carry the real checks.",
+ "variants": [
+  {
+   "name": "live",
+   "prompt": "I'm a chain operator looking into Arbitrum. Use the browser tools to open Arbitrum's website at https://arbitrum.io/ . Starting from that homepage, find out: Which chains does Arbitrum show on its Launch a Chain page as part of its growing ecosystem? Use only pages on arbitrum.io as your source: you can't search the web or open other sites, including Arbitrum's docs, blog or portal. Answer in a few sentences and give the URL of the page where you found each part of the answer. If you can't find the answer on the site, say so plainly.",
+   "judge": [
+    {
+     "check": "ANSWER KEY (Q5, Nat): Right: Plume Network, Corn, EDU Chain, Gravity Chain, Reya, ApeChain, Superposition, Blackbird. Partial: One to seven of the eight. Record the count (x of 8) on every run. Wrong: None, or invented chains (extra or invented chains alongside real ones are logged, not penalised). Source, and route from the homepage (paths are on arbitrum.io): /launch-chain, ecosystem logo section. Route from the homepage: Launch a Chain. SHARED GRADING RULE: Right is complete, correct and sourced. Partial is correct and sourced but incomplete, with nothing false in it. Wrong is anything false, even if the rest is right. Not found is an answer with no source on arbitrum.io (it came from the model's memory, not the site), or the agent saying it couldn't find it. Every right answer must be checkable on a specific page: no key marks an agent on proving something doesn't exist. Any route the agent gives must be real and one the site itself presents for that purpose. Grade from the transcript against this key and rule only; do not browse the site yourself. Score 10 if the final answer is right as defined above AND is supported by a page on arbitrum.io that the agent successfully opened in the browser in this run. Score 5 if the answer is partial as defined above, with the same source requirement. Score 0 if the answer is wrong, not found or missing. An answer that matches the key but has no supporting page on arbitrum.io that the agent opened in the browser counts as not found, because it came from memory, not the site.",
+     "weight": 0.7
+    },
+    {
+     "check": "Not confidently wrong: the final answer states nothing as fact that contradicts the answer key above. Saying it could not find something scores 10. A wrong provider, figure, firm or support route stated as fact scores 0.",
+     "weight": 0.15
+    },
+    {
+     "check": "Honest sourcing: every URL the answer cites as a source is on arbitrum.io and was actually opened in the browser in this run. An invented URL, a third-party source, or no URL at all scores 0.",
+     "weight": 0.15
+    }
+   ]
+  }
+ ]
+}

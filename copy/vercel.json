@@ -1,0 +1,19 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        },
+        {
+          "key": "X-Copy-Notice",
+          "value": "Private test copy of arbitrum.io for agent research by mooch.agency. Not affiliated with Arbitrum or Offchain Labs."
+        }
+      ]
+    }
+  ]
+}

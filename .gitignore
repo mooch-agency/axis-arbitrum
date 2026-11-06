@@ -1,0 +1,8 @@
+# Run output holds the pages the agent read, raw API bodies and transcripts: keep it private.
+runs/
+axis/*/.axis/
+axis/*/api-bodies/
+node_modules/
+.env*
+__pycache__/
+.venv/

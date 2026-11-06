@@ -1,0 +1,21 @@
+Data and documentation licence
+
+Copyright (c) 2026 mooch.agency
+
+The data and documentation in this repository are licensed under the Creative
+Commons Attribution 4.0 International licence (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+
+This covers:
+  - results/ (runs.csv, summary.csv, marks.json)
+  - questions/
+  - README.md
+
+Attribution: "mooch.agency, axis-arbitrum (2026)", with a link to this repository.
+
+Not covered, and not ours to licence: text quoted from arbitrum.io inside the
+agents' answers in results/runs.csv. It belongs to its owners and appears here
+only as part of the record of what each agent said.
+
+Code (scripts/, copy/, axis/ and package.json) is under the MIT licence in LICENSE.

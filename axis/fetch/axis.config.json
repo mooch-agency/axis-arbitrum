@@ -1,0 +1,51 @@
+{
+  "name": "axis-arbitrum: direct fetch route, arbitrum.io copy, A (403 like live) vs B (unblocked), Natalie's questions",
+  "scenarios": "./scenarios",
+  "agents": [
+    {
+      "agent": "claude-code",
+      "model": "claude-sonnet-5-5",
+      "flags": {
+        "dangerously-skip-permissions": false,
+        "permission-mode": "dontAsk",
+        "settings": "{\"enabledPlugins\": {\"cc-plugin-agents-md@builtin\": false, \"cc-plugin-plugin-authoring@builtin\": false}, \"permissions\": {\"defaultMode\": \"dontAsk\", \"allow\": [\"WebFetch(domain:{COPY_A})\", \"WebFetch(domain:{COPY_B})\"], \"deny\": [\"WebSearch\", \"Bash\"]}}"
+      }
+    }
+  ],
+  "judging": {
+    "agents": [
+      {
+        "agent": "claude-code",
+        "model": "claude-fable-5",
+        "flags": {
+          "settings": "{\"enabledPlugins\": {\"cc-plugin-agents-md@builtin\": false, \"cc-plugin-plugin-authoring@builtin\": false}, \"permissions\": {\"deny\": [\"WebFetch\", \"WebSearch\", \"Bash\"]}}"
+        }
+      }
+    ]
+  },
+  "env": [
+    "CLAUDE_CODE_ENABLE_TELEMETRY",
+    "CLAUDE_CODE_ENHANCED_TELEMETRY_BETA",
+    "OTEL_TRACES_EXPORTER",
+    "OTEL_METRICS_EXPORTER",
+    "OTEL_LOGS_EXPORTER",
+    "OTEL_EXPORTER_OTLP_PROTOCOL",
+    "OTEL_EXPORTER_OTLP_TRACES_ENDPOINT",
+    "OTEL_EXPORTER_OTLP_HEADERS",
+    "OTEL_LOG_TOOL_DETAILS",
+    "OTEL_SERVICE_NAME",
+    "OTEL_LOG_TOOL_CONTENT",
+    "OTEL_LOG_RAW_API_BODIES",
+    "DISABLE_AUTOUPDATER",
+    "ANTHROPIC_CUSTOM_HEADERS"
+  ],
+  "settings": {
+    "runs": 1,
+    "concurrency": 2,
+    "limits": {
+      "scenario": {
+        "time_minutes": 10
+      }
+    }
+  }
+}
