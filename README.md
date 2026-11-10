@@ -2,7 +2,7 @@
 
 arbitrum.io sits behind Cloudflare's bot check, a screen that tries to tell people from bots. We wanted to know what that means for someone who sends an AI agent to research Arbitrum. So we asked an agent five questions someone building on Arbitrum might ask, and told it to answer from the site alone.
 
-This repo holds the method, data and scripts behind our post on mooch.agency (link coming soon).
+This repo holds the method, data and scripts behind our write-up on LinkedIn, [How agent-friendly is your website?](https://www.linkedin.com/pulse/how-agent-friendly-your-website-tahi-gichigi-4dspe)
 
 ## The short version
 
